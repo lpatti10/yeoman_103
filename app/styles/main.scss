@@ -1,6 +1,4 @@
-$primary_color: #E86EA4;
-
-// @import 'normalize';
+$primary_color: #0D3451;
 
 
 @mixin caps_headings {
@@ -65,21 +63,21 @@ small {
 }
 
 ul.top_left {
-   list-style-type: none;
-   display: inline-block;
-   font-family: 'PT Sans', sans-serif;
-   padding-left: 40px;
+ list-style-type: none;
+ display: inline-block;
+ font-family: 'PT Sans', sans-serif;
+ padding-left: 40px;
 }
 
 ul.top_right, li {
-   list-style-type: none;
-   display: inline-block;
-   float: right;
-   font-family: 'Oswald', sans-serif;
-   padding-left: 0px;
+ list-style-type: none;
+ display: inline-block;
+ float: right;
+ font-family: 'Oswald', sans-serif;
+ padding-left: 0px;
 }
 
-.search {
+#search {
 	padding-left: 5px;
 }
 
@@ -102,20 +100,20 @@ aside {
 }
 
 .avatar {
-		margin: 0 auto;
-		text-align: center;
-		margin-top: 40px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
 }
 
 h3 {
-	@caps_headings;
+	@include caps_headings;
 	font-family: 'Oswald', sans-serif;
 	font-size: 15px;
 	margin-top: 50px;
 }
 
 h4 {
-	@caps_headings;
+	@include caps_headings;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 12px;
 	text-align: center;
@@ -144,7 +142,7 @@ h4 {
 }
 
 .adlink {
-font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 10px;	
 	float: right;
 	display: inline-block;
@@ -227,10 +225,10 @@ h2 {
 }
 
 .button {
-		display: inline-block;
-		width: 125px;
-		height: 25px;
-			margin: 0px 10px 0px 0px;
+	display: inline-block;
+	width: 125px;
+	height: 25px;
+	margin: 0px 10px 0px 0px;
 
 }
 
@@ -240,11 +238,10 @@ h2 {
 	float: left;
 	height: 15px;
 	width: 15px;
-				border: none;
-				padding: 5px;
-
-
+	border: none;
+	padding: 5px;
 }
+
 .label {
 	float: right;
 	background-color: #A4B3BF;
@@ -259,6 +256,17 @@ h2 {
 	width: 100px;
 	border: none;
 }
+
+
+.bug:hover { 
+background-color: $primary_color;
+}
+
+.label:hover { 
+	background-color: #206DB1;
+}
+
+
 
 /************** FOOTER *********************/
 
